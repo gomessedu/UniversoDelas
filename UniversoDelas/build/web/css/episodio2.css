@@ -1,0 +1,142 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 de set. de 2026, 21:42:57
+    Author     : Thamis
+*/
+
+.pagina-episodio {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #5b5b5b;
+    font-family: Arial, sans-serif;
+}
+
+.tela-episodio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 38px;
+}
+
+.conteudo-episodio {
+    width: 100%;
+    text-align: center;
+}
+
+.universo-episodio {
+    margin: 0 0 8px 0;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.conteudo-episodio h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        90deg,
+        #e65bb5,
+        #b98be5,
+        #3fa9e8
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.linha-episodio {
+    width: 80px;
+    height: 3px;
+    margin: 17px auto 14px auto;
+    background: #d6a7d7;
+    border-radius: 10px;
+}
+
+.subtitulo-episodio {
+    margin: 0 0 21px 0;
+    color: white;
+    font-size: 16px;
+}
+
+.video-episodio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.video-episodio video {
+    width: 360px;
+    height: 410px;
+    object-fit: contain;
+
+    background: black;
+
+    border: 2px solid #d99bd5;
+    border-radius: 11px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+}
+
+.botoes-episodio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.botao-episodio {
+    width: 148px;
+    height: 40px;
+
+    border: 1px solid #d9b1d8;
+    border-radius: 22px;
+
+    background: transparent;
+
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-episodio:hover {
+    background: rgba(217, 177, 216, 0.2);
+    transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+
+    .tela-episodio {
+        padding-top: 30px;
+    }
+
+    .conteudo-episodio h1 {
+        font-size: 34px;
+    }
+
+    .video-episodio video {
+        width: 85%;
+        height: auto;
+        max-height: 410px;
+    }
+
+    .subtitulo-episodio {
+        font-size: 15px;
+    }
+
+}

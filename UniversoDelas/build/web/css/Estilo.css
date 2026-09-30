@@ -1,0 +1,661 @@
+tbody {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #05051a, #11114d, #24247a);
+
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle, white 1.5px, transparent 1.5px),
+        radial-gradient(circle, white 1px, transparent 1px),
+        linear-gradient(135deg, #05051a, #11114d, #24247a);
+
+    background-size: 120px 120px, 180px 180px, 100% 100%;
+}
+
+h1 {
+    background: linear-gradient(90deg, #FFFFFF, #FF69B4, #00E5FF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size: 50px;
+    margin: 0;
+    background: linear-gradient(90deg, #FFFFFF, #00E5FF, #8A2BE2, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inicio h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle, white 1.5px, transparent 1.5px),
+        radial-gradient(circle, white 1px, transparent 1px),
+        linear-gradient(135deg, #05051a, #11114d, #24247a);
+
+    background-size: 120px 120px, 180px 180px, 100% 100%;
+    animation: estrelas 20s linear infinite;
+}
+
+@keyframes estrelas {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    50% {
+        background-position: 60px 120px, -80px 60px, 0 0;
+    }
+
+    100% {
+        background-position: 120px 240px, -160px 120px, 0 0;
+    }
+}
+
+.botao {
+    margin-top: 35px;
+    padding: 15px 40px;
+
+    border: 2px solid #FF69B4;
+    border-radius: 50px;
+
+    background: #FF69B4;
+    color: #FFFFFF;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px #FF69B4;
+
+    transition: 0.4s ease;
+}
+
+.botao:hover {
+    background: #00E5FF;
+    border-color: #00E5FF;
+
+    box-shadow: 0 0 15px #00E5FF,
+                0 0 30px #00E5FF;
+
+    transform: scale(1.08);
+}
+
+.frase {
+    background: linear-gradient(90deg, #FFD700, #FFF4B0, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.estrela {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: explodir 1s ease-out forwards;
+}
+
+@keyframes explodir {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(var(--x), var(--y)) scale(0);
+        opacity: 0;
+    }
+}
+
+.escolha {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.escolha h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #FFFFFF, #00E5FF, #8A2BE2, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.escolha > p {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.personagens {
+    display: flex;
+    gap: 25px;
+}
+
+.personagem {
+    width: 210px;
+    min-height: 250px;
+
+    padding: 25px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    transition: 0.4s;
+}
+
+.personagem:hover {
+    transform: translateY(-15px) scale(1.05);
+
+    border-color: #FF69B4;
+
+    box-shadow:
+        0 0 15px #FF69B4,
+        0 0 30px #FF69B4;
+}
+
+.icone {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.personagem h2 {
+    color: #FF69B4;
+    font-size: 20px;
+}
+
+.personagem p {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   PRIMEIRA DESCOBERTA
+   ========================================= */
+
+.primeira-descoberta {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #05051a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* CONTEÚDO */
+
+.descoberta-conteudo {
+    width: 90%;
+    max-width: 850px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TEXTO PEQUENO */
+
+.descoberta-pequeno {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    color: #aaaac7;
+}
+
+
+/* TÍTULO */
+
+.primeira-descoberta h1 {
+    margin: 0;
+
+    font-size: 42px;
+
+    letter-spacing: 3px;
+
+    color: white;
+}
+
+
+/* LINHA */
+
+.linha {
+    width: 100px;
+    height: 3px;
+
+    margin: 25px 0 35px;
+
+    background: #7c5cff;
+
+    border-radius: 10px;
+}
+
+
+/* TEXTO */
+
+.descoberta-texto {
+    max-width: 700px;
+
+    margin: 10px auto;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #d8d8e8;
+}
+
+
+/* FRASE DE DESTAQUE */
+
+.descoberta-destaque {
+    margin-top: 25px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+}
+
+
+/* BOTÃO REDONDO */
+
+.botao-redondo {
+    width: 70px;
+    height: 70px;
+
+    margin-top: 35px;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* EFEITO DO BOTÃO */
+
+.botao-redondo:hover {
+    background: #7c5cff;
+
+    border-color: #7c5cff;
+
+    transform: scale(1.1);
+}
+
+
+/* TEXTO ABAIXO DO BOTÃO */
+
+.clique {
+    margin-top: 15px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #9999b5;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .primeira-descoberta h1 {
+        font-size: 30px;
+    }
+
+    .descoberta-texto {
+        font-size: 16px;
+    }
+
+    .descoberta-destaque {
+        font-size: 19px;
+    }
+
+}
+
+/* BOTÕES DOS CARDS */
+
+.botao-escolher {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px auto 0;
+
+    transition: 0.3s;
+}
+
+.botao-escolher:hover {
+    background: #7c5cff;
+
+    border-color: #7c5cff;
+
+    transform: scale(1.1);
+}
+
+
+/* TELA - ABERTURA DA SÉRIE          */
+/* ================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #050518;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* TELA PRINCIPAL */
+
+.tela-abertura {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(90, 70, 180, 0.18),
+            transparent 40%
+        ),
+        #050518;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo-abertura {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+/* UNIVERSO DELAS */
+
+.conteudo-abertura .universo {
+    margin: 0 0 20px 0;
+
+    font-size: 14px;
+    letter-spacing: 7px;
+
+    color: #b9b9d8;
+
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+.conteudo-abertura h1 {
+    margin: 0;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #ff9dcc,
+        #9b8cff,
+        #29dbea
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+}
+
+
+/* LINHA */
+
+.conteudo-abertura .linha {
+    width: 100px;
+    height: 3px;
+
+    margin: 28px auto 45px;
+
+    background: linear-gradient(
+        90deg,
+        #ff9dcc,
+        #8a7dff,
+        #29dbea
+    );
+
+    border-radius: 10px;
+}
+
+
+/* FRASE PRINCIPAL */
+
+.conteudo-abertura .frase-destaque {
+    margin: 0 0 30px 0;
+
+    font-size: 25px;
+    line-height: 1.7;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* TEXTO */
+
+.conteudo-abertura .texto-abertura {
+    width: 100%;
+    max-width: 680px;
+
+    margin: 0 auto 35px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #d6d6e8;
+
+    text-align: center;
+}
+
+
+/* PREPARE-SE */
+
+.conteudo-abertura .prepare-se {
+    margin: 0 0 35px 0;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* BOTÃO */
+
+.conteudo-abertura .botao-continuar {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    border: 2px solid #ffffff;
+
+    color: #ffffff;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* EFEITO DO BOTÃO */
+
+.conteudo-abertura .botao-continuar:hover {
+    transform: scale(1.08);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    box-shadow: 0 0 20px rgba(126, 220, 255, 0.4);
+}
+
+
+/* TEXTO ABAIXO DO BOTÃO */
+
+.conteudo-abertura .clique {
+    margin: 18px 0 0 0;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #9b9bbd;
+
+    text-align: center;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .conteudo-abertura h1 {
+        font-size: 30px;
+    }
+
+    .conteudo-abertura .frase-destaque {
+        font-size: 21px;
+    }
+
+    .conteudo-abertura .texto-abertura {
+        font-size: 16px;
+    }
+
+    .conteudo-abertura .universo {
+        font-size: 11px;
+        letter-spacing: 5px;
+    }
+}
+

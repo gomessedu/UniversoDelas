@@ -1,0 +1,362 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 de set. de 2026, 01:31:49
+    Author     : Thamis
+*/
+/* =========================================
+   UNIVERSO DELAS - EPISÓDIO 1
+   ========================================= */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body.pagina-episodio {
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background: #5a5a5a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+}
+
+
+/* ESCONDE AS ESTRELAS */
+
+body.pagina-episodio .estrela {
+    display: none !important;
+}
+
+
+/* TELA INTEIRA */
+
+body.pagina-episodio .tela-episodio {
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 25px 20px;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center;
+}
+
+
+/* CONTEÚDO */
+
+body.pagina-episodio .conteudo-episodio {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto !important;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+
+/* UNIVERSO DELAS */
+
+body.pagina-episodio .universo-episodio {
+    width: 100%;
+
+    margin: 0 0 10px 0 !important;
+
+    padding: 0;
+
+    color: #eeeeee !important;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    text-align: center !important;
+}
+
+
+/* TÍTULO */
+
+body.pagina-episodio .conteudo-episodio h1 {
+    width: 100%;
+
+    margin: 0 !important;
+    padding: 0;
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    text-align: center !important;
+
+    color: #f1c7df !important;
+}
+
+
+/* LINHA */
+
+body.pagina-episodio .linha-episodio {
+    width: 80px;
+
+    height: 3px;
+
+    margin: 15px auto !important;
+
+    padding: 0;
+
+    background: #d7a9d5;
+
+    border-radius: 10px;
+}
+
+
+/* SUBTÍTULO */
+
+body.pagina-episodio .subtitulo-episodio {
+    width: 100%;
+
+    margin: 0 0 20px 0 !important;
+
+    padding: 0;
+
+    color: #ffffff !important;
+
+    font-size: 16px;
+
+    text-align: center !important;
+}
+
+
+/* ÁREA DO VÍDEO */
+
+body.pagina-episodio .video-episodio {
+    width: 420px;
+    max-width: 90%;
+
+    margin: 0 auto 20px auto !important;
+
+    padding: 4px;
+
+    box-sizing: border-box;
+
+    background: #111111;
+
+    border: 2px solid #d7a9d5;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+    display: block !important;
+}
+
+
+/* VÍDEO VERTICAL */
+
+body.pagina-episodio .video-episodio video {
+    width: 100%;
+
+    height: 470px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: #000000;
+
+    border-radius: 8px;
+}
+
+
+/* VÍDEO */
+
+body.pagina-episodio .video-episodio video {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+
+    border-radius: 8px;
+}
+
+
+/* BOTÃO */
+
+body.pagina-episodio .botao-episodio {
+    display: flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto !important;
+
+    padding: 11px 26px;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid #e0c4df;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+body.pagina-episodio .botao-episodio:hover {
+    background: rgba(255, 255, 255, 0.18);
+
+    transform: translateY(-3px);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    body.pagina-episodio .tela-episodio {
+        padding: 30px 15px;
+    }
+
+    body.pagina-episodio .conteudo-episodio h1 {
+        font-size: 35px;
+    }
+
+    body.pagina-episodio .video-episodio {
+        width: 95%;
+    }
+
+}
+
+/* =========================================
+   SETA PARA A PRÓXIMA TELA
+   ========================================= */
+
+body.pagina-episodio .seta-proximo {
+
+    width: 55px;
+    height: 55px;
+
+    margin: 5px auto 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    border: 2px solid #e0c4df;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+body.pagina-episodio .seta-proximo:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+
+    transform: scale(1.08);
+}
+
+
+/* TEXTO ABAIXO DA SETA */
+
+body.pagina-episodio .texto-proximo {
+
+    margin: 8px 0 0 0;
+
+    color: #eeeeee;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-align: center;
+}
+
+body.pagina-episodio .video-episodio {
+    width: 360px;
+    max-width: 90%;
+
+    margin: 0 auto 12px auto !important;
+
+    padding: 4px;
+
+    background: #111111;
+
+    border: 2px solid #d7a9d5;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+body.pagina-episodio .video-episodio video {
+    width: 100%;
+    height: 400px;
+
+    object-fit: contain;
+
+    display: block;
+
+    background: #000000;
+}

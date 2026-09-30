@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universo Delas - Abertura</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #050518;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .abertura {
+            min-height: 100vh;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at 50% 30%,
+                    rgba(91, 65, 180, 0.35),
+                    transparent 45%
+                ),
+                #050518;
+        }
+
+        .conteudo {
+            width: 90%;
+            max-width: 850px;
+        }
+
+        .universo {
+            color: #c5c5df;
+
+            font-size: 14px;
+
+            letter-spacing: 7px;
+
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 44px;
+
+            margin-bottom: 25px;
+
+            background: linear-gradient(
+                90deg,
+                #ff9dcc,
+                #9b8cff,
+                #29dbea
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .linha {
+            width: 100px;
+            height: 3px;
+
+            margin: 0 auto 40px;
+
+            border-radius: 10px;
+
+            background: linear-gradient(
+                90deg,
+                #ff9dcc,
+                #9b8cff,
+                #29dbea
+            );
+        }
+
+        .frase {
+            color: white;
+
+            font-size: 25px;
+
+            line-height: 1.6;
+
+            font-weight: bold;
+
+            margin-bottom: 30px;
+        }
+
+        .descricao {
+            max-width: 650px;
+
+            margin: 0 auto 30px;
+
+            color: #d6d6e8;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+        }
+
+        .prepare {
+            color: white;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            width: 70px;
+            height: 70px;
+
+            border-radius: 50%;
+
+            border: 2px solid white;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 35px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            transform: scale(1.1);
+
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .clique {
+            color: #9b9bbd;
+
+            font-size: 11px;
+
+            letter-spacing: 3px;
+
+            margin-top: 15px;
+        }
+
+        @media (max-width: 700px) {
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .frase {
+                font-size: 20px;
+            }
+
+            .descricao {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main class="abertura">
+
+        <div class="conteudo">
+
+            <p class="universo">
+                UNIVERSO DELAS
+            </p>
+
+            <h1>
+                A HISTÓRIA COMEÇA AGORA
+            </h1>
+
+            <div class="linha"></div>
+
+            <p class="frase">
+                Cinco mulheres.<br>
+                Cinco histórias.<br>
+                Um universo inteiro de descobertas.
+            </p>
+
+            <p class="descricao">
+                Por trás de cada descoberta, existe uma história.
+                E por trás de cada história, existe uma mulher
+                que ousou ir além.
+            </p>
+
+            <p class="prepare">
+                Prepare-se para conhecê-las.
+            </p>
+
+            <button class="botao" onclick="irParaEpisodio()">
+                →
+            </button>
+
+            <p class="clique">
+                CLIQUE PARA COMEÇAR
+            </p>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        function irParaEpisodio() {
+
+            window.location.href = "episodio1.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

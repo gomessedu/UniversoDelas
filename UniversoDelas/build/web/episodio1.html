@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universo Delas - Episódio 1</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/Estilo.css">
+    <link rel="stylesheet" type="text/css" href="./css/episodio1.css">
+
+</head>
+
+<body class="pagina-episodio">
+
+    <main class="tela-episodio">
+
+        <div class="conteudo-episodio">
+
+            <p class="universo-episodio">
+                UNIVERSO DELAS
+            </p>
+
+            <h1>EPISÓDIO 1</h1>
+
+            <div class="linha-episodio"></div>
+
+            <p class="subtitulo-episodio">
+                Uma nova descoberta começa agora.
+            </p>
+
+
+            <div class="video-episodio">
+
+                <video id="meuVideo" controls>
+
+                    <source src="./Videos/Video1.mp4" type="video/mp4">
+
+                    Seu navegador não suporta vídeos.
+
+                </video>
+
+            </div>
+
+
+            <div class="botoes-episodio">
+
+                <button
+                    class="botao-episodio"
+                    onclick="telaCheia()">
+                    ⛶ TELA CHEIA
+                </button>
+
+                <button
+                    class="botao-episodio"
+                    onclick="continuar()">
+                    CONTINUAR →
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function continuar() {
+
+            window.location.href = "episodio2.html";
+
+        }
+
+
+        function telaCheia() {
+
+            var video = document.getElementById("meuVideo");
+
+            if (video.requestFullscreen) {
+
+                video.requestFullscreen();
+
+            } else if (video.webkitRequestFullscreen) {
+
+                video.webkitRequestFullscreen();
+
+            } else if (video.msRequestFullscreen) {
+
+                video.msRequestFullscreen();
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

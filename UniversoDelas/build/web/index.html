@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Delas</title>
+
+    <link rel="stylesheet" href="css/Estilo.css">
+</head>
+
+<body>
+
+    <main class="inicio">
+
+        <h1>SEJA BEM-VINDO AO <span>UNIVERSO DELAS</span></h1>
+
+        <h2>A DESCOBERTA COMEÇA AGORA</h2>
+
+   <p class="frase">UMA JORNADA POR HISTÓRIAS, DESCOBERTAS E MULHERES QUE TRANSFORMARAM A CIÊNCIA</p>
+
+        <button class="botao" onclick="estrelas(event); entrar()">ENTRAR NO UNIVERSO</button>
+
+    </main>
+    
+    <script>
+function estrelas(event) {
+
+    for (let i = 0; i < 15; i++) {
+
+        const estrela = document.createElement("span");
+
+        estrela.classList.add("estrela");
+        estrela.innerHTML = "✦";
+
+        const x = (Math.random() - 0.5) * 250;
+        const y = (Math.random() - 0.5) * 250;
+
+        estrela.style.setProperty("--x", x + "px");
+        estrela.style.setProperty("--y", y + "px");
+
+        estrela.style.left = event.clientX + "px";
+        estrela.style.top = event.clientY + "px";
+
+        document.body.appendChild(estrela);
+
+        setTimeout(() => {
+            estrela.remove();
+        }, 1000);
+    }
+}
+</script>
+
+<script>
+function entrar() {
+    setTimeout(() => {
+        window.location.href = "personagem.html";
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
